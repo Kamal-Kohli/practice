@@ -1,0 +1,53 @@
+/* Add background color to the top navigation */
+.top-nav {
+    position: relative;
+    background-color: #46413B;
+    overflow: hidden;
+}
+  
+/* Add style to the navigation bar */
+.top-nav a {
+    float: left;
+    color: #F7F7F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.top-nav a:hover {
+    background-color: #BEBBB6;
+    color: #46413B;
+}
+  
+.top-nav a.active {
+    background-color: #F7F7F5;
+    color: #46413B;
+}
+  
+.top-nav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.top-nav-right {
+    float: right;
+}
+  
+/* Responsive navigation menu - display (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .top-nav a, .top-nav-right {
+      float: none;
+      display: block;
+    }
+  
+    .top-nav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
